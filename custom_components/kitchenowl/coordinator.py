@@ -4,13 +4,16 @@ from datetime import timedelta
 import logging
 from typing import TypedDict
 
-from kitchenowl_python.exceptions import (
+from .kitchenowl_python.src.kitchenowl_python.exceptions import (
     KitchenOwlAuthException,
     KitchenOwlException,
     KitchenOwlRequestException,
 )
-from kitchenowl_python.kitchenowl import KitchenOwl
-from kitchenowl_python.types import KitchenOwlShoppingList, KitchenOwlShoppingListItem
+from .kitchenowl_python.src.kitchenowl_python.kitchenowl import KitchenOwl
+from .kitchenowl_python.src.kitchenowl_python.types import (
+    KitchenOwlShoppingList,
+    KitchenOwlShoppingListItem,
+)
 
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers.update_coordinator import DataUpdateCoordinator, UpdateFailed

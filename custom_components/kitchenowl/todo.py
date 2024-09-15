@@ -4,9 +4,12 @@ import asyncio
 import logging
 from typing import TYPE_CHECKING
 
-from kitchenowl_python.types import KitchenOwlItem, KitchenOwlShoppingListItem
+from .kitchenowl_python.src.kitchenowl_python.types import (
+    KitchenOwlItem,
+    KitchenOwlShoppingListItem,
+)
 
-from config.custom_components.kitchenowl import KitchenOwlConfigEntry
+from . import KitchenOwlConfigEntry
 from homeassistant.components.todo import (
     TodoItem,
     TodoItemStatus,

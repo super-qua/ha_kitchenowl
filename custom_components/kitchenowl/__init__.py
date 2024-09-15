@@ -2,8 +2,11 @@
 
 import logging
 
-from kitchenowl_python.exceptions import KitchenOwlAuthException, KitchenOwlException
-from kitchenowl_python.kitchenowl import KitchenOwl
+from .kitchenowl_python.src.kitchenowl_python.exceptions import (
+    KitchenOwlAuthException,
+    KitchenOwlException,
+)
+from .kitchenowl_python.src.kitchenowl_python.kitchenowl import KitchenOwl
 
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import CONF_ACCESS_TOKEN, CONF_HOST, CONF_VERIFY_SSL, Platform

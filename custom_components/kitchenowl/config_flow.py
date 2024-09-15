@@ -3,11 +3,11 @@
 import logging
 from typing import Any
 
-from kitchenowl_python.exceptions import (
+from .kitchenowl_python.src.kitchenowl_python.exceptions import (
     KitchenOwlAuthException,
     KitchenOwlRequestException,
 )
-from kitchenowl_python.kitchenowl import KitchenOwl
+from .kitchenowl_python.src.kitchenowl_python.kitchenowl import KitchenOwl
 import voluptuous as vol
 
 from homeassistant import config_entries
