@@ -1,3 +1,3 @@
 [submodule "custom_components/kitchenowl/kitchenowl-python"]
-	path = custom_components/kitchenowl/kitchenowl-python
+	path = custom_components/kitchenowl/kitchenowl_python
 	url = https://github.com/super-qua/kitchenowl-python.git
