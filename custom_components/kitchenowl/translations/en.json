@@ -1,0 +1,66 @@
+{
+    "config": {
+      "error": {
+          "invalid_access_token": "Invalid access token",
+          "timeout_connect": "Timeout establishing connection",
+          "cannot_connect": "Failed to connect",
+          "no_households": "No households found",
+          "household": "Cannot get shopping list data for this household."
+      },
+      "step": {
+        "user": {
+            "data": {
+                "host": "The host address of your KitchenOwl intance",
+                "access_token": "The Long-lived Token",
+                "verify_ssl": "Verify SSL certificate"
+            },
+            "description": "Enter your KitchenOwl host address and credentials.",
+            "title": "Connection"
+        },
+        "household": {
+            "data": {
+                "household": "Household"
+            },
+            "description": "Select the household you want to set the integration up for.",
+            "title": "Household"
+        },
+        "reauth_confirm": {
+            "data": {
+                "access_token": "The Long-lived Token"
+            },
+            "description": "Update your KitchenOwl token.",
+            "title": "Reauthenticate"
+        },
+        "reconfigure_confirm": {
+            "data": {
+                "host": "The host address of your KitchenOwl intance",
+                "access_token": "The Long-lived Token",
+                "verify_ssl": "Verify SSL certificate"
+            },
+            "description": "Enter your KitchenOwl host address and credentials.",
+            "title": "Connection"
+        },
+        "reconfigure_household": {
+            "data": {
+                "household": "Household"
+            },
+            "description": "Select the household you want to set the integration up for.",
+            "title": "Household"
+        }
+      }
+    },
+    "abort": {
+        "already_configured": "Service is already configured",
+        "reauth_successful": "Re-authentication was successful",
+        "reconfigure_successful": "Re-configuration was successful",
+        "reconfig_different_user": "Use the same user account that was used in the inital setup of the integration"
+    },
+    "exceptions": {
+        "no_households_found_exception": {
+            "message": "No households found."
+        },
+        "household_not_in_households_list_exception": {
+            "message": "Household {household} not found in households list"
+        }
+    }
+  }

@@ -1,0 +1,66 @@
+{
+    "config": {
+      "error": {
+          "invalid_access_token": "[%key:common::config_flow::error::invalid_access_token%]",
+          "timeout_connect": "[%key:common::config_flow::error::timeout_connect%]",
+          "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+          "no_households": "No households found",
+          "household": "Cannot get shopping list data for this household."
+      },
+      "step": {
+        "user": {
+            "data": {
+                "host": "[%key:common::config_flow::data::host%]",
+                "access_token": "The Long-lived Token",
+                "verify_ssl": "[%key:common::config_flow::data::verify_ssl%]"
+            },
+            "description": "Enter your KitchenOwl host address and credentials.",
+            "title": "Connection"
+        },
+        "household": {
+            "data": {
+                "household": "Household"
+            },
+            "description": "Select the household you want to set the integration up for.",
+            "title": "Household"
+        },
+        "reauth_confirm": {
+            "data": {
+                "access_token": "The Long-lived Token"
+            },
+            "description": "Update your KitchenOwl token.",
+            "title": "Reauthenticate"
+        },
+        "reconfigure_confirm": {
+            "data": {
+                "host": "[%key:common::config_flow::data::host%]",
+                "access_token": "The Long-lived Token",
+                "verify_ssl": "[%key:common::config_flow::data::verify_ssl%]"
+            },
+            "description": "Enter your KitchenOwl host address and credentials.",
+            "title": "Connection"
+        },
+        "reconfigure_household": {
+            "data": {
+                "household": "Household"
+            },
+            "description": "Select the household you want to set the integration up for.",
+            "title": "Household"
+        }
+      }
+    },
+    "abort": {
+        "already_configured": "[%key:common::config_flow::abort::already_configured_service%]",
+        "reauth_successful": "[%key:common::config_flow::abort::reauth_successful%]",
+        "reconfigure_successful": "[%key:common::config_flow::abort::reconfigure_successful%]",
+        "reconfig_different_user": "Use the same user account that was used in the inital setup of the integration"
+    },
+    "exceptions": {
+        "no_households_found_exception": {
+            "message": "No households found."
+        },
+        "household_not_in_households_list_exception": {
+            "message": "Household {household} not found in households list"
+        }
+    }
+  }
